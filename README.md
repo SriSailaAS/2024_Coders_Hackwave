@@ -44,20 +44,21 @@ The users can post their questions and answer to other questions posted by other
 
 ### Plant Disease Detection
 
-![WhatsApp Image 2023-10-15 at 11 33 49 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/014935f2-92bd-4fee-93a2-db5a9bcab63f)
+![WhatsApp Image 2023-10-15 at 11 33 49 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/850fe155-ae17-49e8-8909-735410633517)
 
 
 ### Crop Recommendation
 
-![WhatsApp Image 2023-10-15 at 11 36 49 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/8ed42795-a557-439f-93a6-3a821063c0d9)
+![WhatsApp Image 2023-10-15 at 11 36 49 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/5084975e-eeca-4000-89a2-97d88dc645e3)
 
 ### Suggestion For Crops
 
-![WhatsApp Image 2023-10-15 at 11 37 19 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/5c5b89e1-2095-4c24-8d7f-c156ba5cbdbe)
+![WhatsApp Image 2023-10-15 at 11 37 19 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/dea71cea-58fc-4589-9ee8-1a62bbf15496)
+
 
 ### Fertilizer Recommenation
   
-![WhatsApp Image 2023-10-15 at 11 38 13 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/7e3a99b5-6103-49a1-a0a0-47484c0c5c4b)
+![WhatsApp Image 2023-10-15 at 11 38 13 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/2237fcb6-5ffd-4596-9b90-73d0634c929e)
 
 
 ## Future Integration
