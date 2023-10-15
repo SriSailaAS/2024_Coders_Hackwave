@@ -46,6 +46,8 @@ The users can post their questions and answer to other questions posted by other
 
 ![WhatsApp Image 2023-10-15 at 11 33 49 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/850fe155-ae17-49e8-8909-735410633517)
 
+![WhatsApp Image 2023-10-15 at 12 05 52 PM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/e26fef6d-a546-413f-adca-c9d9cd15b732)
+
 
 ### Crop Recommendation
 
