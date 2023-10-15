@@ -29,18 +29,17 @@ We have developed a All-in-one Platform where users can have their profile by re
 
   ### Integrated ChatBot in Home Page
 
-![WhatsApp Image 2023-10-15 at 11 29 30 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/ab547a5b-70a8-414d-a9e5-0c9e3e00fd92)
+![WhatsApp Image 2023-10-15 at 11 29 30 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/8469834a-1878-4672-80fd-9bd24d0fc7f4)
 
   ### Registration/Login Page
   
-![WhatsApp Image 2023-10-15 at 11 38 34 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/90d8d571-6a8a-42f5-9b56-5052304edb0c)
-
+![WhatsApp Image 2023-10-15 at 11 38 34 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/48678d13-9c02-4e3f-87b0-79f4f79369f6)
 
   ### Discussion Forum
 
 The users can post their questions and answer to other questions posted by other users. The answers with more upvotes will appear at the top (sorted by most upvotes). The toxic questions and answers are not posted in the forum, it is identified and deleted automatically.
 
-  ![WhatsApp Image 2023-10-15 at 11 30 06 AM (1)](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/d81d5731-7e9b-45fa-a690-6b0e622b5f6d)
+  ![WhatsApp Image 2023-10-15 at 11 30 06 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/40fa797a-e9c2-493d-a7c4-056e5a04592c)
 
 
 ### Plant Disease Detection
