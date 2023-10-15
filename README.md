@@ -64,8 +64,9 @@ We have developed a All-in-one Platform where users can have their profile by re
 ## Future Integration
 
 ChatBot using LLM
-![WhatsApp Image 2023-10-15 at 10 28 43 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/bebeebdd-8e41-4dc7-bae6-9f1d84dddabc)
-![WhatsApp Image 2023-10-15 at 10 28 43 AM (1)](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/664f6233-43a7-4112-a7e0-0efe5576dfe6)
+
+![WhatsApp Image 2023-10-15 at 10 28 43 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/65cf216b-8875-4f2d-9be1-512bff2d6016)
+![WhatsApp Image 2023-10-15 at 10 28 43 AM (1)](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/b70a5030-e226-45fb-926c-ee4b43025a08)
 
 
 
