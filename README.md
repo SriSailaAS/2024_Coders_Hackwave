@@ -65,8 +65,10 @@ The users can post their questions and answer to other questions posted by other
 
 ChatBot using LLM
 
-![WhatsApp Image 2023-10-15 at 10 28 43 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/65cf216b-8875-4f2d-9be1-512bff2d6016)
-![WhatsApp Image 2023-10-15 at 10 28 43 AM (1)](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/b70a5030-e226-45fb-926c-ee4b43025a08)
+![WhatsApp Image 2023-10-15 at 10 28 43 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/ff7bd64e-7b6b-445b-bdff-b31af549c355)
+
+![WhatsApp Image 2023-10-15 at 10 28 43 AM (1)](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/54dd43e3-8114-42ed-ab76-b38f0c818a48)
+
 
 
 
