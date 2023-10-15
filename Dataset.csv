@@ -1,0 +1,39 @@
+Disease,Treatment
+Apple___Apple_scab,Apply fungicides like sulfur or copper-based products in the spring before buds open. Prune to improve air circulation.
+Apple___Black_rot,Apply fungicides during the growing season.
+Apple___Cedar_apple_rust,Apply fungicides starting at bud swell.
+Apple___healthy,No treatment required.
+Blueberry___healthy,No treatment required.
+Cherry_(including_sour)___Powdery_mildew,Apply fungicides like sulfur or potassium bicarbonate during the growing season.
+Cherry_(including_sour)___healthy,No treatment required.
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot, Apply fungicides as needed during the growing season.
+Corn_(maize)___Common_rust_,Fungicides may be applied during the growing season.
+Corn_(maize)___Northern_Leaf_Blight,Apply fungicides during the growing season.
+Corn_(maize)___healthy,No treatment required.
+Grape___Black_rot, Apply fungicides from bud break to veraison.
+Grape___Esca_(Black_Measles),Apply fungicides during the growing season.
+Grape___Leaf_blight_(Isariopsis_Leaf_Spot),Apply fungicides during the growing season.
+Grape___healthy,No treatment required.
+Orange___Haunglongbing_(Citrus_greening),Manage infected trees with regular insecticide treatments to control the psyllid vector.
+Peach___Bacterial_spot,Apply copper-based bactericides in the early spring before bud break.
+Peach___healthy,No treatment required.
+"Pepper,_bell___Bacterial_spot",Apply copper-based bactericides before transplanting and during the growing season.
+"Pepper,_bell___healthy",No treatment required.
+Potato___Early_blight,Apply fungicides and practice good crop rotation.
+Potato___Late_blight,Apply fungicides preventatively. Remove and destroy infected plants. Practice crop rotation.
+Potato___healthy,No treatment required.
+Raspberry___healthy,No treatment required.
+Soybean___healthy,No treatment required.
+Squash___Powdery_mildew,Apply fungicides like sulfur or potassium bicarbonate. 
+Strawberry___Leaf_scorch,Ensure proper irrigation and mulching.Avoid water stress.
+Strawberry___healthy,No treatment required.
+Tomato___Bacterial_spot,Apply copper-based bactericides. Remove and destroy infected plant parts. Practice crop rotation.
+Tomato___Early_blight,Apply fungicides preventatively. Remove and destroy infected leaves. Practice good crop rotation.
+Tomato___Late_blight,Apply fungicides preventatively. Remove and destroy infected leaves. Practice good crop rotation.
+Tomato___Leaf_Mold,Apply fungicides like chlorothalonil. Ensure good air circulation.
+Tomato___Septoria_leaf_spot,Apply fungicides during the growing season. Remove and destroy infected leaves.
+Tomato___Spider_mites Two-spotted_spider_mite,Use insecticidal soaps or miticides to control mites. Remove heavily infected leaves.
+Tomato___Target_Spot,Apply fungicides during the growing season. Remove and destroy infected leaves.
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,Manage whitefly vectors with insecticides.
+Tomato___Tomato_mosaic_virus,Manage aphid vectors with insecticides. Remove and destroy infected plants.
+Tomato___healthy,No treatment required.

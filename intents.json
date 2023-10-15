@@ -1,0 +1,127 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hello",
+        "Hi!",
+        "Good Morning!",
+        "Good Evening",
+        "Good afternoon",
+        "Hey",
+        "Whats up",
+        "Is anyone there?"
+      ],
+      "responses": [
+        "Hello. Welcome to Crops World",
+        "Hi ! We are here to provide our service",
+        "Welcome",
+        "Hi there"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "Hi.What is your name?",
+        "May I know your name?",
+        "Your name please."
+      ],
+      "responses": [
+        "My name is Shera.",
+        "You can call me Shera."
+      ]
+    },
+        {
+          "tag": "Crop Recommendation",
+          "patterns": [
+              "Which crop is suitable for my region?",
+              "What crop should I grow?",
+              "What crops are suitable for my climate?",
+              "Which crop is best for my soil type?",
+              "What crop will yield the most profit?"
+          ],
+          "responses": [
+              "The best crop for your region and soil type would be based on location, and other soil factors.Explore our site to know more about that.",
+              "Based on your climate, soil type, and expected yield, I recommend growing based on location, and other soil factors.Explore our site to know more about that.",
+              "For the most profitable crop, you should consider growing based on location, and other soil factors.Explore our site to know more about that ."
+          ]
+        },
+        {
+          "tag": "Fertilizer Prediction",
+          "patterns": [
+              "What type of fertilizer should I use?",
+              "How much fertilizer should I apply?",
+              "What is the best time to apply fertilizer?",
+              "Which fertilizer is best for [crop name]?",
+              "What is the NPK ratio for [crop name]?"
+          ],
+          "responses": [
+              "For this crop, I recommend using fertilizers based on the crop type, the NPK ratio of your soil,etc. Explore our website to know more about that. ",
+              "To achieve optimal growth for this crop, you should apply amount of fertilizer based on the crop type, the NPK ratio of your soil,etc. during March-May. "
+          ]
+        },
+        {
+          "tag": "Crop Suggestion",
+          "patterns": [
+            "I want to grow a crop that is easy to maintain. Can you suggest one?",
+            "Which crop requires less water and fertilizer?",
+            "What are some low-maintenance crops?"
+          ],
+          "responses": [
+            "Some crops that are relatively easy to maintain and require less water and fertilizer include wheat, rice, barley, millets. These crops are also known to provide good yields and can be a good choice for beginners."
+          ]
+        },
+        {
+          "tag": "Crop Disease Identification",
+          "patterns": [
+            "My crop leaves are turning yellow. What could be the reason?",
+            "What is causing the spots on my crop leaves?",
+            "Why are my crop plants wilting?"
+          ],
+          "responses": [
+            "Based on the symptoms you described, it seems like your crop is affected by [Disease Name]. This disease is caused by [Cause] and can be treated with [Treatment]. Please take necessary precautions to prevent the spread of the disease to other crops."
+          ]
+        },
+        {
+          "tag": "Crop Harvesting",
+          "patterns": [
+            "When is the right time to harvest [Crop Name]?",
+            "How do I know when my crops are ready to be harvested?",
+            "What are some signs that indicate my crops are ready for harvest?"
+          ],
+          "responses": [
+            "The right time to harvest the crops depends on the variety, growth stage, and market demand. Generally, you can look for signs such as excess growth, change in the color of leaves to know when your crops are ready for harvest."
+          ]
+        },
+        {
+          "tag": "Crop Irrigation",
+          "patterns": [
+            "How often should I water my crops?",
+            "What is the best time to water my crops?",
+            "What are some irrigation techniques for [Crop Name]?"
+          ],
+          "responses": [
+            "The water requirements for crops vary based on the crop type, soil type, and weather conditions. Generally, some crops require large amount of water per week. You can also use drip irrigation or canal irrigation to optimize water use and ensure good crop growth."
+          ]
+        },
+    
+    {
+      "tag":"Goodbye",
+      "patterns": [
+          "Thanks for your help",
+          "Goodbye",
+          "bye",
+          "Bye",
+          "Thank you",
+          "See you later",
+          "I'm done for now"
+      ],
+      "responses": [
+          "You're welcome! Feel free to come back if you have more questions.",
+          "Goodbye! Have a great day.",
+          "See you later! Take care.",
+          "No problem, have a good day!"
+      ]
+    }
+  ]
+}
