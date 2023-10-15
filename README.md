@@ -40,7 +40,7 @@ We have developed a All-in-one Platform where users can have their profile by re
 
       The users can post their questions and answer to other questions posted by other users. The answers with more upvotes will appear at the top (sorted by most upvotes). The toxic questions and answers are not posted in the forum, it is identified and deleted automatically.
 
-  ![WhatsApp Image 2023-10-15 at 11 30 06 AM](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/fbcb2fed-3c3b-446c-aed0-92e4272298b1)
+  ![WhatsApp Image 2023-10-15 at 11 30 06 AM (1)](https://github.com/SriSailaAS/2024_Coders_Hackwave/assets/89289311/d81d5731-7e9b-45fa-a690-6b0e622b5f6d)
 
 
 ### Plant Disease Detection
