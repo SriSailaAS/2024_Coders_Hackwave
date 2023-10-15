@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANT DISEASE CLASSIFIER</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Loads the external CSS stylesheet for the webpage -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/sts.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        /* CSS for centering elements and adding a background image */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-image: url('static\\images\\bg4.jpeg'); /* Replace with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #008000; /* Set text color for readability */
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Added this line to change the direction of items */
+            text-align: center; /* Center the text */
+        }
+
+        /* Add space between form elements */
+        form {
+            margin-bottom: 20px; /* Add margin at the bottom of the form */
+        }
+
+        #uploadImage {
+            margin-bottom: 10px; /* Add margin at the bottom of the upload input */
+        }
+        #predictButton{
+        background-color: #008000;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        }
+        /*#predictButton {
+            margin-top: 30px;  Add more margin at the top of the predict button 
+        }*/
+
+        h1 {
+            font-size: 3em;
+             /* Increase the font size of the title */
+        }
+
+        .box {
+            position: relative; /* Added to allow absolute positioning inside */
+        }
+
+        /*predictButton {
+            position: absolute;
+            bottom: 0;
+        }*/
+
+        /* Added style for the box-result */
+        .box-result {
+            margin-top: 30px; /* Add margin at the top of the box-result */
+        }
+    </style>
+</head>
+
+<body>
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #8ac79a;">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/"><b>Agro Sage</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="/"><b>Home Page</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about"><b>About Us</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/help"><b>Discussion Forum</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/plantdisease"><b>Plant Disease Identification</b></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/predictpage">Crop Prediction</a>
+                    <a class="dropdown-item" href="/base">Suggestion For Crop</a>
+                    <a class="dropdown-item" href="/fertilizer">Fertilizer Predictions</a>
+                    
+                  </div>
+                </li>
+            </ul>
+             <ul class="navbar-nav">
+              <li class="nav-item" id="user-dropdown">
+                  <a class="nav-link" href="#">
+                      <div style="display: flex; align-items: center;">
+                          <div style="width: 32px; height: 32px; border-radius: 50%; overflow: hidden; margin-right: 10px;">
+                              <img src="/static/images/plogo.jpg" alt="User Profile" style="width: 100%; height: 100%;">
+                          </div>
+                          <span>{{ session['user']['name'] }}</span>
+                      </div>
+                  </a>
+                  <div class="user-dropdown-content">
+                      <p><strong>Location:</strong> {{ session['user']['location'] }}</p>
+                      <p><strong>Profession:</strong> {{ session['user']['profession'] }}</p>
+                      <a href="/user/signout">Sign Out</a>
+                  </div>
+              </li>
+          </ul>
+            </div>
+          </div>
+        </nav>
+             
+              <!-- Title heading -->
+             
+              
+          </header>
+
+    <h1 style = "font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" >Plant Disease Classifier <span class="fa fa-leaf"></span></h1>
+    <hr>
+
+
+    <div class="row">
+        <form method="post" action="/plantdisease" enctype="multipart/form-data">
+            <!-- Add the input element for uploading an image -->
+            <input type="file" id="uploadImage" name="file" accept="image/*" onchange="displayImage()"><br>
+
+        <div class="box">
+            <!-- Image Box which displays the Uploaded image -->
+            <img src="" alt="" id="image" width="224" height="224">
+            <!-- Replace the input element with a Predict button -->
+            <br><br><br>
+            <button type="submit" id="predictButton">Predict</button>
+        </div>
+        </form>
+    </div>
+
+    <div class="box box-result">
+        <!-- Simple div which shows the Model Loading Status -->
+        <div class="init_status"></div>
+
+        <div class="accuracy">
+            <!-- Simple progress bar which indicates the accuracy for the predicted class -->
+            <div class="progress" id="progress">
+                <div class="inner">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/2.0.1/tf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js"></script>
+    <!-- Load the External Javascript file for web app's functionality -->
+    <script src="script.js"></script>
+
+    <script>
+        // Define the predictImage function for the Predict button
+        function predictImage() {
+            const inputElement = document.getElementById('uploadImage');
+
+            // Check if a file is selected
+            if (inputElement.files && inputElement.files[0]) {
+                const formData = new FormData();
+                formData.append('file', inputElement.files[0]);
+
+                // Send the image data to the server
+                fetch('/plantdisease', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.text())
+                    .then(result => {
+                        // Handle the server response here (e.g., display a message to the user)
+                        alert(result);
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            } else {
+                alert('Please select an image before predicting.');
+            }
+        }
+
+        // Define the displayImage function to show the selected image
+        function displayImage() {
+            const inputElement = document.getElementById('uploadImage');
+            const imageElement = document.getElementById('image');
+
+            // Check if a file is selected
+            if (inputElement.files && inputElement.files[0]) {
+                const reader = new FileReader();
+
+                reader.onload = function(e) {
+                    // Set the source of the image element to the selected image
+                    imageElement.src = e.target.result;
+                };
+
+                // Read the selected file as a data URL
+                reader.readAsDataURL(inputElement.files[0]);
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
